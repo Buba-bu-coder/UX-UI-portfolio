@@ -9,11 +9,13 @@
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--sacred:#1b4332;--sl:#2d6a4f;--cream:#f5f0e8;--warm:#ede8df;--td:#2c2c2a;--tm:#6b6b67;--tl:#9b9b96;--em:#6ee7b7}
 body{background:white;font-family:'DM Sans',sans-serif;color:var(--td);font-size:17px}
-.cs{max-width:1200px;margin:0 auto}
-.sec{padding:64px 60px;border-bottom:.5px solid var(--warm)}
+.cs{width:100%}
+.inner{max-width:1200px;margin:0 auto;padding:0 60px}
+.sec{padding:64px 0;border-bottom:.5px solid var(--warm)}
 
 /* COVER */
-.cover{background:var(--sacred);padding:72px 60px 80px;position:relative;overflow:hidden}
+.cover{background:var(--sacred);padding:72px 0 80px;position:relative;overflow:hidden}
+.cover .inner{max-width:1200px;margin:0 auto;padding:0 60px}
 .cbg{position:absolute;border-radius:50%;opacity:.07;background:white}
 .ctag{font-size:11px;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;color:var(--em);margin-bottom:28px}
 .ctitle{font-family:'Playfair Display',Georgia,serif;font-size:64px;font-weight:400;color:white;line-height:1.05;margin-bottom:8px}
@@ -34,7 +36,7 @@ body{background:white;font-family:'DM Sans',sans-serif;color:var(--td);font-size
 .stitle em{font-style:italic;color:var(--sl)}
 .stitle-light{color:white}
 .stitle-light em{color:var(--em)}
-.body{font-size:15px;line-height:1.75;color:var(--tm);max-width:640px}
+.body{font-size:15px;line-height:1.75;color:var(--tm);max-width:780px}
 .body-light{color:rgba(255,255,255,.65)}
 
 .two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
@@ -109,7 +111,7 @@ body{background:white;font-family:'DM Sans',sans-serif;color:var(--td);font-size
 .nlabel{font-size:15px;font-weight:500;margin-bottom:4px}
 .ndesc{font-size:13px;color:var(--tm);line-height:1.6}
 
-.footer{background:var(--sacred);padding:36px 60px;display:flex;justify-content:space-between;align-items:center}
+.footer{background:var(--sacred);padding:36px 0}
 .fl{font-family:'Playfair Display',Georgia,serif;font-size:20px;color:white}
 .fr{font-size:11px;color:rgba(255,255,255,.35);letter-spacing:1px;text-transform:uppercase}
 
@@ -130,6 +132,7 @@ body{background:white;font-family:'DM Sans',sans-serif;color:var(--td);font-size
   <div class="cover">
     <div class="cbg" style="width:380px;height:380px;right:-80px;top:-80px"></div>
     <div class="cbg" style="width:180px;height:180px;left:42%;bottom:-50px"></div>
+    <div class="inner">
     <div class="ctag">UX Case Study · 2025–2026</div>
     <div class="ctitle">Sacred<br><em>Timing</em></div>
     <div class="csub">A quiet ally for the modern practitioner. Navigate your daily routine without losing your sacred windows.</div>
@@ -139,10 +142,12 @@ body{background:white;font-family:'DM Sans',sans-serif;color:var(--td);font-size
       <div class="cmi"><span class="cml">Stack</span><span class="cmv">React · TypeScript · Vite</span></div>
       <div class="cmi"><span class="cml">Status</span><span class="cmv">In Development</span></div>
     </div>
+    </div>
   </div>
 
   <!-- 01 PROBLEM -->
   <div class="sec">
+    <div class="inner">
     <div class="slabel">01 — The Problem</div>
     <div class="two">
       <div>
@@ -163,10 +168,12 @@ body{background:white;font-family:'DM Sans',sans-serif;color:var(--td);font-size
         <p class="body" style="margin-top:18px;font-size:13px">Interviewed practitioners described the same pattern: they knew the dates mattered, they had the intent to observe them — but nothing in their phone reflected that intent.</p>
       </div>
     </div>
+    </div>
   </div>
 
   <!-- 02 PERSONA -->
   <div class="sec sec-alt">
+    <div class="inner">
     <div class="slabel">02 — The Persona</div>
     <div class="stitle">Who is the <em>practitioner?</em></div>
     <div class="two">
@@ -191,10 +198,12 @@ body{background:white;font-family:'DM Sans',sans-serif;color:var(--td);font-size
         <div class="need"><div class="ni">📍</div><div><div class="nl">Location intelligence</div><div class="nd">Brahma Muhurta and Sandhya Kala shift with sunrise — the app must know where you are.</div></div></div>
       </div>
     </div>
+    </div>
   </div>
 
   <!-- RESEARCH -->
   <div class="sec sec-dark">
+    <div class="inner">
     <div class="slabel slabel-light">Research · Validating the Problem</div>
     <div class="stitle stitle-light">What practitioners <em>actually said</em></div>
     <div class="two">
@@ -222,10 +231,12 @@ body{background:white;font-family:'DM Sans',sans-serif;color:var(--td);font-size
         <p class="body body-light" style="margin-top:16px;font-size:13px">Sacred Timing is designed primarily for the first two archetypes — but the widget's zero-effort model naturally serves all three.</p>
       </div>
     </div>
+    </div>
   </div>
 
   <!-- 03 KEY DECISIONS -->
   <div class="sec">
+    <div class="inner">
     <div class="slabel">03 — Key Decisions</div>
     <div class="stitle">Five decisions that<br>shaped the <em>experience</em></div>
     <div class="decs">
@@ -260,10 +271,12 @@ body{background:white;font-family:'DM Sans',sans-serif;color:var(--td);font-size
         <span class="dtag">Interaction design · Platform constraints</span>
       </div>
     </div>
+    </div>
   </div>
 
   <!-- 04 WIDGET -->
   <div class="sec sec-dark">
+    <div class="inner">
     <div class="slabel slabel-light">04 — The Product</div>
     <div class="stitle stitle-light">The widget — <em>three states</em></div>
     <p class="body body-light">The widget is the heart of Sacred Timing. It lives on the home screen and never requires the app to be opened for daily use.</p>
@@ -288,119 +301,65 @@ body{background:white;font-family:'DM Sans',sans-serif;color:var(--td);font-size
       <h3>Widget logic</h3>
       <p>Collapsed shows only Ongoing + Upcoming — ended events are hidden for a clean, actionable view. Expanded reveals ended events above the scroll position; auto-scroll lands on the first Ongoing event. Calendar mode switches the header navigation from individual days to full months, giving a broader planning view without leaving the widget.</p>
     </div>
+    </div>
   </div>
 
   <!-- APP SCREENS -->
   <div class="sec sec-alt">
+    <div class="inner">
     <div class="slabel">04b — App Screens</div>
     <div class="stitle">The <em>full experience</em></div>
     <div class="gallery gallery-3">
-      <div class="gitem">
-        <img src="images/onboarding.png" alt="Onboarding"/>
-        <div class="glabel">Onboarding</div>
-        <div class="gsub">First launch · Sacred Timing</div>
-      </div>
-      <div class="gitem">
-        <img src="images/today.png" alt="Today screen"/>
-        <div class="glabel">Today Screen</div>
-        <div class="gsub">All events · live countdowns</div>
-      </div>
-      <div class="gitem">
-        <img src="images/my-events.png" alt="My Events"/>
-        <div class="glabel">My Events</div>
-        <div class="gsub">Select events to follow</div>
-      </div>
+      <div class="gitem"><img src="images/onboarding.png" alt="Onboarding"/><div class="glabel">Onboarding</div><div class="gsub">First launch · Sacred Timing</div></div>
+      <div class="gitem"><img src="images/today.png" alt="Today screen"/><div class="glabel">Today Screen</div><div class="gsub">All events · live countdowns</div></div>
+      <div class="gitem"><img src="images/my-events.png" alt="My Events"/><div class="glabel">My Events</div><div class="gsub">Select events to follow</div></div>
     </div>
     <div class="gallery gallery-3" style="margin-top:24px">
-      <div class="gitem">
-        <img src="images/notification-panel.png" alt="Notification detail panel"/>
-        <div class="glabel">Notification settings</div>
-        <div class="gsub">Sound · Push · When</div>
-      </div>
-      <div class="gitem">
-        <img src="images/ekadashi.png" alt="Ekadashi event detail"/>
-        <div class="glabel">Calendar Event</div>
-        <div class="gsub">Ekadashi · event detail</div>
-      </div>
-      <div class="gitem">
-        <img src="images/sadhana.png" alt="Shivanga Sadhana"/>
-        <div class="glabel">Sadhana</div>
-        <div class="gsub">Shivanga · My Practice</div>
-      </div>
+      <div class="gitem"><img src="images/notification-panel.png" alt="Notification detail panel"/><div class="glabel">Notification settings</div><div class="gsub">Sound · Push · When</div></div>
+      <div class="gitem"><img src="images/ekadashi.png" alt="Ekadashi event detail"/><div class="glabel">Calendar Event</div><div class="gsub">Ekadashi · event detail</div></div>
+      <div class="gitem"><img src="images/sadhana.png" alt="Shivanga Sadhana"/><div class="glabel">Sadhana</div><div class="gsub">Shivanga · My Practice</div></div>
     </div>
     <div class="gallery gallery-3" style="margin-top:24px">
-      <div class="gitem">
-        <img src="images/new-event.png" alt="Add new event"/>
-        <div class="glabel">Add Event</div>
-        <div class="gsub">Search or create · widget toggle</div>
-      </div>
-      <div class="gitem">
-        <img src="images/lockscreen.png" alt="Lock screen empty"/>
-        <div class="glabel">Lock screen</div>
-        <div class="gsub">Quiet state · 3 notifications pending</div>
-      </div>
-      <div class="gitem">
-        <img src="images/notification_2_light_bg.png" alt="Lock screen with notification"/>
-        <div class="glabel">Lock screen · notification</div>
-        <div class="gsub">Sandhya Kala · Ends in 42m</div>
-      </div>
+      <div class="gitem"><img src="images/new-event.png" alt="Add new event"/><div class="glabel">Add Event</div><div class="gsub">Search or create · widget toggle</div></div>
+      <div class="gitem"><img src="images/lockscreen.png" alt="Lock screen empty"/><div class="glabel">Lock screen</div><div class="gsub">Quiet state · 3 notifications pending</div></div>
+      <div class="gitem"><img src="images/notification_2_light_bg.png" alt="Lock screen with notification"/><div class="glabel">Lock screen · notification</div><div class="gsub">Sandhya Kala · Ends in 42m</div></div>
+    </div>
     </div>
   </div>
 
   <!-- DESIGN SYSTEM -->
   <div class="sec">
+    <div class="inner">
     <div class="slabel">04c — Design System</div>
     <div class="stitle">Three event types,<br>one <em>coherent language</em></div>
     <div class="three" style="margin-top:16px">
-      <div class="tc">
-        <div class="tnum">Type 1</div>
-        <div class="tname">Calendar Event</div>
-        <div class="tdesc">Isha dates: Ekadashi, Purnima, Amavasya. Read-only. The app provides them; the user observes them.</div>
-        <div class="badge b-amber">Amber badge</div>
-      </div>
-      <div class="tc">
-        <div class="tnum">Type 2</div>
-        <div class="tname">Sadhana</div>
-        <div class="tdesc">Isha period (read-only) + user's My Practice block. User sets start date and duration; culmination auto-calculated.</div>
-        <div class="badge b-indigo">Indigo badge</div>
-      </div>
-      <div class="tc">
-        <div class="tnum">Type 3</div>
-        <div class="tname">Personal Event</div>
-        <div class="tdesc">Fully user-created. Both start and end dates are editable. Saves immediately on date selection — no confirm button.</div>
-        <div class="badge b-green">Green badge</div>
-      </div>
+      <div class="tc"><div class="tnum">Type 1</div><div class="tname">Calendar Event</div><div class="tdesc">Isha dates: Ekadashi, Purnima, Amavasya. Read-only. The app provides them; the user observes them.</div><div class="badge b-amber">Amber badge</div></div>
+      <div class="tc"><div class="tnum">Type 2</div><div class="tname">Sadhana</div><div class="tdesc">Isha period (read-only) + user's My Practice block. User sets start date and duration; culmination auto-calculated.</div><div class="badge b-indigo">Indigo badge</div></div>
+      <div class="tc"><div class="tnum">Type 3</div><div class="tname">Personal Event</div><div class="tdesc">Fully user-created. Both start and end dates are editable. Saves immediately on date selection — no confirm button.</div><div class="badge b-green">Green badge</div></div>
+    </div>
     </div>
   </div>
 
   <!-- WHATS NEXT -->
   <div class="sec sec-alt">
+    <div class="inner">
     <div class="slabel">05 — What's Next</div>
     <div class="stitle">The road to <em>native</em></div>
     <div style="max-width:620px;margin-top:8px">
-      <div class="next-item">
-        <div class="nnum">1</div>
-        <div><div class="nlabel">From Web MVP to React Native</div><div class="ndesc">The current phase focuses on building a web-based MVP (React) to test and validate the core UX model. Once validated, the next major milestone is migrating to React Native — unlocking true native home screen widgets on iOS and Android and leveraging the OS-level notification scheduler.</div></div>
-      </div>
-      <div class="next-item">
-        <div class="nnum">2</div>
-        <div><div class="nlabel">Practitioner research on notification defaults</div><div class="ndesc">Real data on when practitioners want to be reminded. A structured survey will inform the default timing per event type — not assumptions.</div></div>
-      </div>
-      <div class="next-item">
-        <div class="nnum">3</div>
-        <div><div class="nlabel">Accessories reminder flow</div><div class="ndesc">Three specific Sadhanas require physical items. A one-time onboarding prompt will ask the user if they'd like a reminder ~2 months before the Sadhana starts, linking directly to the Isha store.</div></div>
-      </div>
-      <div class="next-item">
-        <div class="nnum">4</div>
-        <div><div class="nlabel">Onboarding for first-time users</div><div class="ndesc">The full onboarding flow — location permission, first event selection, notification setup — is designed but not yet implemented. It will be the final screen group before App Store submission.</div></div>
-      </div>
+      <div class="next-item"><div class="nnum">1</div><div><div class="nlabel">From Web MVP to React Native</div><div class="ndesc">The current phase focuses on building a web-based MVP (React) to test and validate the core UX model. Once validated, the next major milestone is migrating to React Native — unlocking true native home screen widgets on iOS and Android and leveraging the OS-level notification scheduler.</div></div></div>
+      <div class="next-item"><div class="nnum">2</div><div><div class="nlabel">Practitioner research on notification defaults</div><div class="ndesc">Real data on when practitioners want to be reminded. A structured survey will inform the default timing per event type — not assumptions.</div></div></div>
+      <div class="next-item"><div class="nnum">3</div><div><div class="nlabel">Accessories reminder flow</div><div class="ndesc">Three specific Sadhanas require physical items. A one-time onboarding prompt will ask the user if they'd like a reminder ~2 months before the Sadhana starts, linking directly to the Isha store.</div></div></div>
+      <div class="next-item"><div class="nnum">4</div><div><div class="nlabel">Onboarding for first-time users</div><div class="ndesc">The full onboarding flow — location permission, first event selection, notification setup — is designed but not yet implemented. It will be the final screen group before App Store submission.</div></div></div>
+    </div>
     </div>
   </div>
 
   <!-- FOOTER -->
   <div class="footer">
-    <div class="fl">Sacred Timing</div>
-    <div class="fr">UX Case Study · 2026</div>
+    <div class="inner" style="display:flex;justify-content:space-between;align-items:center;width:100%">
+      <div class="fl">Sacred Timing</div>
+      <div class="fr">UX Case Study · 2026</div>
+    </div>
   </div>
 
 </div>
